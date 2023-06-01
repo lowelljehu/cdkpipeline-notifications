@@ -1,0 +1,263 @@
+{
+  "version": "31.0.0",
+  "artifacts": {
+    "WorkshopPipelineStackPreProdWebService696A237F.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "WorkshopPipelineStackPreProdWebService696A237F.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "WorkshopPipelineStackPreProdWebService696A237F": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "WorkshopPipelineStackPreProdWebService696A237F.template.json",
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/d2717d395e1b74e0d0d0ecd7af551d3e657d7e116544b37d94cd4fd79b3d2438.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "WorkshopPipelineStackPreProdWebService696A237F.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        },
+        "stackName": "Pre-Prod-WebService"
+      },
+      "dependencies": [
+        "WorkshopPipelineStackPreProdWebService696A237F.assets"
+      ],
+      "metadata": {
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandlerServiceRole11EF7C63"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHandler2E4FBA4D"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHitCounter/Hits/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHits7AAEBF80"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHitCounter/HitCountHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRole42AAF829"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHitCounter/HitCountHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandlerServiceRoleDefaultPolicy0295D032"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/HelloHitCounter/HitCountHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HelloHitCounterHitCountHandler2475EAC2"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DA6d5efd8bba324784a5dc9781d745d5bf"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/{proxy+}/ANY/ApiPermission.WorkshopPipelineStackPreProdWebServiceEndpointCB195330.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionWorkshopPipelineStackPreProdWebServiceEndpointCB195330ANYproxyD15D6261"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.WorkshopPipelineStackPreProdWebServiceEndpointCB195330.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestWorkshopPipelineStackPreProdWebServiceEndpointCB195330ANYproxyB0070F0D"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/ANY/ApiPermission.WorkshopPipelineStackPreProdWebServiceEndpointCB195330.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionWorkshopPipelineStackPreProdWebServiceEndpointCB195330ANYFA6DC0EB"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/ANY/ApiPermission.Test.WorkshopPipelineStackPreProdWebServiceEndpointCB195330.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestWorkshopPipelineStackPreProdWebServiceEndpointCB195330ANYDF5C8F87"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/Rendered/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRenderedServiceRole254DB4EA"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/Rendered/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRenderedServiceRoleDefaultPolicy9ADB8C83"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/Rendered/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterRendered9C783E45"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpoint5A0EF326"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointDeployment1CE7C576d8c29fc2b3eb988aa3851585f3f51aec"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointDeploymentStageprodF3901FC7"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointCA1B1E4B"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxy2F4C239F"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.WorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201ED.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionWorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201EDANYproxy72C78580"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.WorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201ED.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionTestWorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201EDANYproxyFD8545CD"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointproxyANYFF4B8F5B"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.WorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201ED.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANYApiPermissionWorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201EDANYBF995582"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.Test.WorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201ED.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANYApiPermissionTestWorkshopPipelineStackPreProdWebServiceViewHitCounterViewerEndpoint351201EDANY6FFC9DD4"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/ViewHitCounter/ViewerEndpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ViewHitCounterViewerEndpointANY66F2285B"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/GatewayUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GatewayUrl"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/TableViewerUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableViewerUrl"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/WorkshopPipelineStack/Pre-Prod/WebService/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "WorkshopPipelineStack/Pre-Prod/WebService"
+    }
+  }
+}
